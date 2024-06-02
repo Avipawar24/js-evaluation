@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#cards{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    border: 1px solid red;
+}
+#cards img{
+    width: 150px;
+    height: 150px;
+}
+
+#cards h2{
+    font-size: medium;
+}
+
+#cards h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#cards>div{
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+gap: 20px;
+padding: 15px;
+}
+#cards h6{
+    color: red;
+    font-size: medium;
+}
+#cards h5{
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* medium screen */
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    #cards{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+/* small screen  */
+@media screen and (max-width:767px) {
+    #cards{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <div id="cards"></div>
+</body>
+<script src="problem7.js"></script>
+</html>
